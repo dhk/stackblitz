@@ -111,6 +111,7 @@ const EqualDaysCalculator = () => {
           <p style={{ color: '#065F46' }}>
             You need to live until <strong>{result}</strong> to have lived an
             equal number of days in both centuries.
+            questions: contact email@dhk.io
           </p>
         </div>
       )}
