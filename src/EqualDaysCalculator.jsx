@@ -1,5 +1,27 @@
 import React, { useState } from 'react';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCpJpm_QiHrXrNuIa8cMIMcIdn22oLZ8Ts",
+  authDomain: "ai-adventures-8dbb5.firebaseapp.com",
+  projectId: "ai-adventures-8dbb5",
+  storageBucket: "ai-adventures-8dbb5.appspot.com",
+  messagingSenderId: "739518592352",
+  appId: "1:739518592352:web:6d1e2f5d992da046849a05",
+  measurementId: "G-4RXZ3BY0ES"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 const EqualDaysCalculator = () => {
   const [birthDate, setBirthDate] = useState('');
   const [result, setResult] = useState('');
