@@ -58,4 +58,5 @@ const CenturySpanCalculator = () => {
     </div>
   );
 };
+
 export default CenturySpanCalculator;
